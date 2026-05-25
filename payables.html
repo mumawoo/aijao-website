@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIJAO Payables Assistant | Phase 1</title>
+  <meta name="description" content="AIJAO Payables Assistant reconciles supplier invoices, CFDI tax XMLs, bank payments, and journal entries into audit-ready AP workflows.">
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/">
+      <span>AIJAO</span>
+      <small>AIJAO.com</small>
+    </a>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/payables">Payables Assistant</a>
+      <a href="/#founder">Founder</a>
+      <a class="button small" href="/#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="subhero">
+    <p class="eyebrow">Phase 1 role-based AI worker</p>
+    <h1>AIJAO Payables Assistant</h1>
+    <p>
+      Reconcile supplier invoices, CFDI tax XMLs, bank payments, and journal entries into audit-ready
+      AP exception workflows.
+    </p>
+  </header>
+
+  <main>
+    <section class="section white">
+      <div class="workspace">
+        <aside class="ask">
+          <h2>Ask AP</h2>
+          <div class="question">
+            <strong>Example question</strong>
+            <span>Which supplier payments this week are missing CFDI?</span>
+          </div>
+          <div class="metric">
+            <b>6</b>
+            <span>payments missing CFDI support</span>
+          </div>
+          <div class="metric">
+            <b>MXN 184,300</b>
+            <span>total amount requiring AP follow-up</span>
+          </div>
+          <div class="metric">
+            <b>3</b>
+            <span>payments not found in journal entries</span>
+          </div>
+        </aside>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Exception Workbench</h2>
+              <p>Public demo layout using synthetic examples. No company accounting data is included.</p>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Supplier</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Evidence</th>
+                <th>Status</th>
+                <th>Suggested action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Supplier A</td>
+                <td>2026-05-08</td>
+                <td>MXN 48,200.00</td>
+                <td>Bank payment only</td>
+                <td><span class="tag warn">Missing CFDI</span></td>
+                <td>Request CFDI and review AP posting.</td>
+              </tr>
+              <tr>
+                <td>Supplier B</td>
+                <td>2026-05-12</td>
+                <td>MXN 19,500.00</td>
+                <td>CFDI + journal</td>
+                <td><span class="tag">Matched</span></td>
+                <td>Mark complete and retain evidence link.</td>
+              </tr>
+              <tr>
+                <td>Supplier C</td>
+                <td>2026-05-14</td>
+                <td>MXN 76,600.00</td>
+                <td>CFDI not booked</td>
+                <td><span class="tag warn">Needs review</span></td>
+                <td>Create AP review task before month-end close.</td>
+              </tr>
+              <tr>
+                <td>Supplier D</td>
+                <td>2026-05-18</td>
+                <td>MXN 8,750.00</td>
+                <td>Same amount/date</td>
+                <td><span class="tag warn">Duplicate risk</span></td>
+                <td>Check UUID and invoice number before booking.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+
+    <section class="section tint">
+      <div class="section-head">
+        <h2>Phase 1 scope</h2>
+        <p>The first AIJAO worker focuses on six AP questions with structured evidence and exportable results.</p>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>Payments missing CFDI</h3>
+          <p>Bank payment exists, but tax XML support is missing or not matched.</p>
+        </article>
+        <article class="card">
+          <h3>CFDI not booked</h3>
+          <p>Supplier CFDI was received, but no journal/AP entry was found.</p>
+        </article>
+        <article class="card">
+          <h3>Duplicate invoice risk</h3>
+          <p>Same UUID, supplier, date, amount, or invoice number requires review.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>AIJAO Payables Assistant</strong>
+    <span>Phase 1 of a role-based AI finance operations system.</span>
+  </footer>
+</body>
+</html>
